@@ -5,6 +5,9 @@
 </template>
 <script>
 export default {
-    layout: "detailtemplate"
+    layout: "detailtemplate",
+    asyncData(data) {
+        console.log(data.params)
+    }
 }
 </script>
