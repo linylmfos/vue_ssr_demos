@@ -59,5 +59,14 @@ module.exports = {
     */
     extend (config, ctx) {
     }
+  },
+  router: {
+    middleware:'redirect',
+    extendRoutes(routes) {
+      routes.push({
+        path: "/",
+        redirect: '/film/nowplaying'
+      })
+    }
   }
 }
